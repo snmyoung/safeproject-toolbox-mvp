@@ -1,0 +1,33 @@
+[
+    {
+      "state": "TN",
+      "type": "Housing",
+      "name": "Welcome Home Transitional Housing",
+      "location": "Nashville, TN",
+      "description": "Short-term housing for justice-involved individuals reentering society. Offers case management and referrals.",
+      "website": "https://welcomehomehousing.org",
+      "notes": "Prioritizes applicants recently released from incarceration."
+    },
+    {
+      "state": "TN",
+      "type": "Mental Health",
+      "name": "Peace of Mind TN",
+      "location": "Memphis, TN",
+      "description": "Provides trauma-informed counseling and peer recovery services for individuals in early recovery or post-release.",
+      "website": "https://peaceofmindtn.org",
+      "notes": "Offers virtual sessions and accepts most insurance plans. Sliding scale available."
+    }
+  
+    /* === Future Resource Template (Do not remove) ===
+    {
+      "state": "XX",
+      "type": "SupportType",
+      "name": "Program Name",
+      "location": "City, State",
+      "description": "What does this resource do and who does it serve?",
+      "website": "https://example.org",
+      "notes": "Optional notes or eligibility criteria"
+    }
+    */
+  ]
+  

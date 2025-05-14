@@ -1,0 +1,218 @@
+/* =================================================== */
+/*        SAFE Toolbox – External Stylesheet           */
+/*        Phase 1 MVP + Phase 2 Expansion Ready        */
+/*        Created by: Suzette-Nicole Young             */
+/* =================================================== */
+
+/* ------------------------------
+   GLOBAL RESET & TYPOGRAPHY
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f0fb;
+    color: #333;
+  }
+  
+  /* ================================
+   NAVIGATION BAR STYLING (MVP)
+   Purpose: Clean divider, white background, soft shadow
+   ================================= */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  position: relative;
+  z-index: 10;
+}
+
+  /* ------------------------------
+     UTILITY CLASSES (Reusable)
+  --------------------------------*/
+  .text-center {
+    text-align: center;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.06);
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  
+
+   /* ========================================
+   HERO SECTION STYLING (MVP)
+   Purpose: Visual upgrade for main intro card
+   
+   ======================================== */
+
+.hero-card {
+  background-color: #ffffff; /* Clean white card on soft lavender bg */
+  border: 1px solid #e5e5e5; /* Light border for definition */
+  border-radius: 12px; /* Modern smooth edges */
+  padding: 2rem 2rem 2.5rem; /* Breathing room, extra bottom padding */
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04); /* Subtle lift from background */
+  text-align: center;
+}
+
+.hero-card .hero-quote {
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.hero-card .hero-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.hero-card .hero-subheading {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.hero-card .hero-divider {
+  height: 2px;
+  width: 40px;
+  background-color: #6a1b9a; /* VIN purple */
+  margin: 1.5rem auto;
+  border-radius: 2px;
+}
+btn {
+    display: inline-block;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-purple {
+    background-color: #6a1b9a;
+    color: white;
+  }
+  
+  .btn-purple:hover {
+    background-color: #4a148c;
+  }
+  
+  /* Healing Quote Block (Serenity + Forgiveness Theme) */
+.healing-quote {
+  background-color: #E0F2E9;       /* soft healing green */
+  color: #D88C9A;                  /* gentle pink for text */
+  font-style: italic;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);  /* optional gentle lift */
+}
+
+  /* ------------------------------
+     PHASE 2: Future Components
+     (Label, Commented, Optional)
+  --------------------------------*/
+  
+  /* === RESOURCE CARD PREVIEW (Phase 2) === */
+  /*
+  .resource-card {
+    border: 1px solid #eee;
+    border-left: 4px solid #6a1b9a;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .resource-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .resource-meta {
+    font-size: 0.85rem;
+    color: #777;
+  }
+    */
+   
+      /* 
+  ==============================
+  PHASE 2: Dynamic JSON Styling (Optional Future)
+  Purpose: Style updates for dynamically-loaded resource cards via JSON.
+  Notes: When JSON loads resource data, structure and appearance can be refined here.
+ ==============================
+ */
+
+ .json-loaded {
+  /* Placeholder: Future style for cards populated from JSON */
+}
+
+
+  
+  /* === MAP RESULTS SECTION (Phase 2) === */
+  /*
+  .map-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  */
+  
+  /* === ADMIN/AGENCY DASHBOARD (Phase 3) === */
+  /*
+  .admin-panel {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  */
+  /* === FOOTER SECTION (MVP) === */
+
+footer {
+  background-color: #f3e5f5; /* Lavender background for brand consistency */
+  color: #333;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+  border-top: 1px solid #ccc;
+}
+
+.footer-socials {
+  margin-bottom: 1rem;
+}
+
+.footer-socials a {
+  color: #4a148c; /* SAFE Toolbox primary purple */
+  margin: 0 10px;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.footer-socials a:hover {
+  color: #6a1b9a; /* Slightly deeper shade for hover */
+}
+
+footer .copyright {
+  font-size: 0.85rem;
+  color: #555;
+}

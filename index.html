@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- ============================================ -->
+  <!-- SAFE Toolbox MVP: HEAD Section               -->
+  <!-- Author: Nicole Young | Created for 2025 MVP  -->
+  <!-- Purpose: Metadata, SEO tags, & mobile support -->
+  <!-- ============================================ -->
+
+    <!-- Character Encoding & Mobile Viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- SEO + Accessibility Metadata -->
+    <meta name="author" content="Nicole Young">
+    <meta name="description" content="SAFE Toolbox MVP - A state-focused recovery resource tool for reentry and support services.">
+    <meta name="keywords" content="SAFE Toolbox, recovery, reentry, housing, addiction support, MVP, justice, state-level resources">
+  
+    <!-- Page Title (Shows in Browser Tab) -->
+    <title>SAFE Toolbox MVP | Built by Nicole Young</title>
+  
+    <!-- ===================================== -->
+    <!--         STYLE SHEETS + DESIGN         -->
+    <!-- ===================================== -->
+  
+    <!-- Bootstrap 5 CSS (Layout + Components) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Font Awesome (Icons for resource tags, categories, etc.) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <!-- Google Fonts (Choose a clean, readable font - Example: Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  
+    <!-- External Stylesheet (custom design for MVP) -->
+    <link rel="stylesheet" href="style/style.css">
+  
+    <!-- ===================================== -->
+    <!--        JAVASCRIPT & FUNCTIONALITY     -->
+    <!-- ===================================== -->
+  
+    <!-- jQuery (Used for dropdowns, filtering, animations) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+    <!-- Bootstrap JS Bundle (for navbar, components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- External JavaScript File -->
+    <script src="script/main.js" defer></script>
+
+    
+  <!-- ===================================== -->
+  <!--         INTERNAL DEMO STYLES          -->
+  <!-- ===================================== -->
+  <style>
+  /* == MVP DEMO STYLES 
+    This file contains core layout and component styling for demo purposes.
+   Will migrate select sections to external style.css after Phase 1 approval.
+    */
+   
+    /* === GLOBAL BASE STYLES === */
+
+    
+
+    .site-title {
+      text-align: center;
+      font-weight: 700;
+      margin-top: 30px;
+      color: #3d3d3d;
+    }
+
+    .section-label {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #6c757d;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+     /* ===== NAVBAR STYLES (MVP + Future-Ready) ===== */
+
+  .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 95%;
+  }
+
+  .navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav-housing { color: #388e3c; }       /* Green for housing */
+  .nav-health { color: #1976d2; }        /* Blue for healthcare */
+  .nav-jobs { color: #f57c00; }          /* Orange for employment */
+  .nav-food { color: #c2185b; }          /* Deep pink for food */
+  .nav-education { color: #512da8; }     /* Indigo for education */
+
+  .nav-link:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+  }
+
+  .get-help-button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  /* Placeholder Icons – Phase 2 */
+  /* .partner-login-icon  → for agency login */
+  /* .api-status-dot      → live system status */
+  /* .language-select     → dropdown for language options */
+
+  /* === HERO + SEARCH SECTION STYLES === */
+
+.search-card {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 30px auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Motivational Quotes */
+.quote-intro,
+
+
+  </style>
+</head>
+
+<body>
+ <!-- =============================== -->
+ <!--        NAVBAR SECTION           -->
+ <!-- =============================== -->
+
+<div class="navbar">
+
+    <!-- === Logo / Site Title === -->
+    <div class="navbar-logo">
+      <!-- Optional logo can go here: -->
+      <!-- <img src="assets/logo.png" alt="SAFE Toolbox Logo" width="100"> -->
+      SAFE Toolbox
+    </div>
+  
+    <!-- === Navigation Links (Color Coded + Icons) === -->
+  <div class="nav-links">
+  <a href="#" class="nav-link nav-housing">
+    <i class="fa-solid fa-house"></i> Housing
+  </a>
+  <a href="#" class="nav-link nav-health">
+    <i class="fa-solid fa-heart-pulse"></i> Healthcare
+  </a>
+  <a href="#" class="nav-link nav-jobs">
+    <i class="fa-solid fa-briefcase"></i> Jobs
+  </a>
+  <a href="#" class="nav-link nav-food">
+    <i class="fa-solid fa-utensils"></i> Food
+  </a>
+  <a href="#" class="nav-link nav-education">
+    <i class="fa-solid fa-graduation-cap"></i> Education
+  </a>
+</div>
+
+  
+    <!-- === Call-To-Action: Urgent Help Button === -->
+    <button class="get-help-button">Get Help Now</button>
+  
+    <!-- === PHASE 2: Future Add-Ons (Optional) === -->
+  
+    <!-- Partner Login Icon (Visible only if user/agency is logged in) -->
+    <!-- <i class="fas fa-user partner-login-icon" title="Partner Login"></i> -->
+  
+    <!-- Live System Status Indicator (Connected to real-time API or server uptime) -->
+    <!-- <span class="api-status-dot" title="System Status: Online"></span> -->
+  
+    <!-- Language Selector Dropdown (Internationalization feature - Phase 3) -->
+    <!--
+    <select class="language-select" aria-label="Select Language">
+      <option value="en">EN</option>
+      <option value="es">ES</option>
+      <option value="fr">FR</option>
+    </select>
+    -->
+  
+  </div>
+  <!-- HERO + SEARCH SECTION (MVP Call to Action) -->
+<section style="background-color: #ffffff; border: 1px solid #e5e5e5; border-radius: 12px; padding: 2rem 2rem 2.5rem; max-width: 600px; margin: 2rem auto; box-shadow: 0 4px 10px rgba(0,0,0,0.04); text-align: center;">
+  
+  <!-- Hero Quote -->
+  <p style="font-style: italic; font-size: 1rem; color: #555; margin-bottom: 1rem;">
+    “You were never buried. You were planted.”
+  </p>
+
+  <!-- Hero Heading -->
+  <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 0.5rem; color: #222;">
+    Find Real-Time Recovery Support
+  </h2>
+
+  <!-- Hero Subheading -->
+  <p style="font-size: 1.1rem; line-height: 1.6; color: #444; margin-bottom: 1.5rem;">
+    “Healing isn’t linear — but help should be.”
+  </p>
+
+  <!-- Divider -->
+  <div style="height: 2px; width: 40px; background-color: #6a1b9a; margin: 1.5rem auto; border-radius: 2px;"></div>
+
+  <!-- Dropdown Form (Override styles for MVP only) -->
+  <form id="search-form">
+
+    <!-- Dropdown: Select State -->
+    <label for="state-select" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Select State</label>
+    <select id="state-select" style="width: 100%; padding: 0.6rem; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 1rem;">
+      <option value="">-- Select Your State --</option>
+      <option value="Tennessee">Tennessee</option>
+    </select>
+
+    <!-- Dropdown: Select Resource Type -->
+    <label for="type-select" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Select Resource Type</label>
+    <select id="type-select" style="width: 100%; padding: 0.6rem; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; margin-bottom: 1.5rem;">
+      <option value="">-- Choose a Support Type --</option>
+      <option value="housing">Housing</option>
+      <option value="healthcare">Healthcare</option>
+      <option value="jobs">Jobs</option>
+      <option value="food">Food</option>
+      <option value="education">Education</option>
+    </select>
+
+    <!-- Search Button -->
+    <button type="submit" style="display: inline-block; padding: 0.6rem 1.4rem; background-color: #6a1b9a; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; transition: background-color 0.3s ease;">
+      Show My Matches
+    </button>
+
+  </form>
+
+  <!-- Reminder -->
+  <!-- NOTE: Inline styles are temporary for MVP only. Replace with external CSS classes in Phase 2 for scalability and cleaner code. -->
+
+</section>
+
+ <!-- Placeholder for Future Actions -->
+<!-- <button class="save-resource" disabled>Save Resource (Coming Soon)</button> -->
+<!-- <button class="share-resource" disabled>Share Resource (Coming Soon)</button> -->
+
+</div>
+
+  <!-- NOTE: These result cards are temporary and hardcoded for MVP demo purposes only. 
+ They will be replaced in Phase 2 by dynamic content loaded based on search. -->
+  <!-- Future: Matching results will appear here -->
+  <!-- Example: Show matching recovery resources -->
+  <!-- Phase 2: This area will dynamically update with cards or links -->
+
+</div>
+<!-- === Motivational Quote Section (Standalone) === -->
+<section class="healing-quote">
+  <p class="quote-highlight">“Even when it feels messy, beauty is still being written.”</p>
+</section>
+
+<!-- === Bonus Placeholder: Spinner or Future Filters === -->
+<div id="future-addons" class="future-placeholder">
+  <!-- Optional visual add-ons like spinners or filters will go here -->
+</div>
+
+
+
+    
+  
+    <!-- === PHASE 2 PLACEHOLDERS (Future Features) === -->
+    <!-- Future: Add animation to icon for visual impact -->
+    <!-- Future: Store recent searches in localStorage -->
+    <!-- Future: Auto-detect user state via browser location -->
+    <!-- Future: Add category-based recommendations -->
+  
+  </div>
+  <!-- === Contact Form Section === -->
+ <section id="contact">
+  <!-- Placeholder: Contact Form will go here -->
+  <!-- Formspree form integration coming soon -->
+</section>
+
+<!-- === Dashboard Section (Future Admin Login Area) === -->
+<section id="dashboard">
+  <!-- Placeholder: Admin dashboard & partner login features -->
+</section>
+  
+</body>
+<!-- === Footer Section (Visible on All Pages) === -->
+<footer id="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 SAFE PROJECT "Toolbox" | Built with purpose by Nicole Young</p>
+    <p class="footer-links">
+      <a href="#">Terms</a> |
+      <a href="#">Privacy</a> |
+      <a href="#">Contact</a>
+    </p>
+  </div>
+
+  <!-- === Social Media Icons (Future Phase 2 Option) === -->
+  <div class="social-icons">
+    <!-- Icons can be styled and linked to real accounts -->
+    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+<!-- === Script Loading (Ensure JavaScript runs after page loads) === -->
+<script src="script/main.js"></script>
+
+<!-- === Future Upgrade: Load JSON Data or API Results Dynamically === -->
+<script>
+  // Example:
+  // Placeholder for dynamic fetch logic
+  // fetch('data/tennessee.json').then(...);
+</script>
+</body>
+</html>
+
+
